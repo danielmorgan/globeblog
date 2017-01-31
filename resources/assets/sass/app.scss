@@ -1,0 +1,29 @@
+// Variables
+@import "variables";
+@lost flexbox flex;
+
+body {
+  font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: 'Playfair Display', serif;
+}
+
+.Container {
+  lost-utility: clearfix;
+  lost-center: 120ch;
+}
+
+.Content {
+  @media (min-width: 768px) {
+    lost-column: 3/4;
+  }
+}
+
+.Sidebar {
+  @media (min-width: 768px) {
+    lost-column: 1/4;
+  }
+}
