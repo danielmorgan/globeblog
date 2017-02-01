@@ -15,5 +15,8 @@
     "postcss-loader": "^1.2.2",
     "vue": "^2.0.1",
     "lost": "^8.0.0"
+  },
+  "dependencies": {
+    "three": "^0.84.0"
   }
 }

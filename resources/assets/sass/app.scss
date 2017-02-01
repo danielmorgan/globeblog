@@ -4,19 +4,24 @@
 
 body {
   font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: #e3e5fa;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: 900;
   font-family: 'Playfair Display', serif;
 }
 
 .Container {
+  margin-top: 140px;
   lost-utility: clearfix;
   lost-center: 120ch;
 }
 
 .Content {
+  z-index: 200;
   @media (min-width: 768px) {
     lost-column: 3/4;
   }

@@ -7,10 +7,17 @@
 
     <title></title>
 
+    <script>window.Laravel = { 'csrfToken': '{{ csrf_token() }}' }</script>
+
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
     @stack('styles')
 </head>
 <body>
+    <div id="app">
+        <Globe></Globe>
+    </div>
+
     <div class="Container">
         <div class="Content">
             @yield('content')
@@ -37,6 +44,8 @@
 
     @stack('scripts')
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="{{ mix('/js/app.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
 </body>
 </html>
